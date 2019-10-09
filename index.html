@@ -7,7 +7,11 @@
 </head>
 <body>
     <div id="scene">
-        <ul>
+        <ul id="jokerBackground">
+            <li><img src="public/images/backgroundLight.jpg" alt=""></li>
+            <li><img id="jokerBackgroundDark" src="public/images/backgroundDark.png" alt=""></li>
+        </ul>
+        <ul id="jokerFace">
             <li><img src="public/images/asset1.svg" alt="" ></li>
             <li><img src="public/images/asset2.svg" alt="" class="hidden"></li>
             <li><img src="public/images/asset1.svg" alt="" class="hidden"></li>
@@ -26,22 +30,43 @@
             <li><img src="public/images/asset2.svg" alt="" class="hidden"></li>
             <li><img src="public/images/asset1.svg" alt="" class="hidden"></li>
         </ul>
-        <ul>
-            <li><img src="" alt=""></li>
-            <li><img src="" alt=""></li>
-        </ul>
-        <a href="">Découvrir le site</a>
+        <a class="btn discovery" href="#">Découvrir le site</a>
     </div>
 </body>
     <script>
         let scroll = 0
         let scale = 1
         let etape = 0
-        let pictures = document.querySelectorAll('#scene ul li')
+        let pictures = document.querySelectorAll('#scene #jokerFace li')
         let percentScale = 0.15
         let speed = 0.3
+        let opacity = 0
         let audioStart = new Audio('public/sound/start.mp3');
         let audioEnd = new Audio('public/sound/end.mp3');
+        let audioBox = [new Audio('public/sound/Jokerlaugh1.mp3')
+            ,new Audio('public/sound/Jokerlaugh2.mp3')
+            ,new Audio('public/sound/slap1.mp3')
+            ,new Audio('public/sound/slap2.mp3')
+            ,new Audio('public/sound/slap3.mp3')
+            ,new Audio('public/sound/gun.mp3')
+            ,new Audio('public/sound/crowd.mp3')
+        ]
+
+        audioStart.volume = 0.1
+        audioEnd.volume = 0.1
+
+        window.addEventListener('keypress',function () {
+            let randomNum = Math.floor(Math.random()*audioBox.length)
+            audioBox[randomNum].volume = 1
+            if(randomNum>1)
+            {
+                audioBox[randomNum].volume = 0.5
+            }
+            audioBox[randomNum].play()
+            console.log(randomNum)
+
+        })
+
         window.onload = function () {
             audioStart.play()
             audioEnd.pause()
@@ -69,6 +94,7 @@
                 {
                     scroll =  (pictures.length-1 )*100
                 }
+
             }
             else
             {
@@ -77,7 +103,11 @@
                 {
                     scroll = 0;
                 }
+
             }
+
+
+
 
             pictures[etape].querySelector('img').classList.add('hidden')
             if((etape == 10) && 10 > Math.round(scroll/100))
@@ -104,6 +134,8 @@
                 pictures[i].querySelector('img').style.transform = 'scale('+scale+')'
             }
 
+
+            document.querySelector('#jokerBackgroundDark').style.opacity = 0.05 * etape
 
 
             console.log(etape)
