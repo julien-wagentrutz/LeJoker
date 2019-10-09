@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0; }
+  body #scene {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative; }
+    body #scene ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0; }
+      body #scene ul li {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        body #scene ul li img {
+          transform: scale(1);
+          opacity: 1;
+          max-height: 100vh;
+          transition: all 1s; }
+  body .hidden {
+    opacity: 0 !important;
+    transition: all 1s; }
+
+/*# sourceMappingURL=main.css.map */
