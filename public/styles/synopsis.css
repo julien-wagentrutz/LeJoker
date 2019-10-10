@@ -1,5 +1,5 @@
 body{
-  width: 100%;
+  width: 99%;
   background-image: url("../images/synbkg.png");
   background-color: #000;
   background-size: 100% auto;
@@ -30,9 +30,9 @@ body{
 }
 
 @font-face {
-  font-family: 'Gotham-Thin';
+  font-family: 'Gotham-Medium';
   src:
-	url('../fonts/Gotham-Thin.otf')
+	url('../fonts/Gotham-Medium.otf')
 	format('opentype');
 }
 
@@ -43,23 +43,24 @@ body{
 	format('opentype');
 }
 
-
 /* HEADER */
 header{
   top: 0;
   width: 100%;
+  height: 70px;
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  z-index:1;
+//  -webkit-filter: blur(2px); /* Safari */
+//  filter: blur(2px);
+  z-index: 1;
 }
 
 .logo img{
-  height: 35.5px;
-  width: 69.5px;
+  height: 45px;
   padding-left: 10px;
 }
 
@@ -68,7 +69,8 @@ nav ul{
   flex-direction: row;
   list-style: none;
   font-family: 'DeadKansas';
-  font-size: 20px;
+  font-weight: normal;
+  font-size: 30px;
 }
 
 .menuItem a{
@@ -76,7 +78,7 @@ nav ul{
   text-decoration: none;
   color: white;
 }
-.menuItem a:hover{
+.menuItem a:hover, .current a{
   color: #890202;
 }
 
@@ -87,9 +89,9 @@ nav ul{
 }
 
 .socialMedia img{
-  width: 24px;
-  height: 24px;
-  padding: 0 5px;
+  width: 40px;
+  height: 40px;
+  padding: 0 7px;
 }
 
 #thejoker{
@@ -97,12 +99,13 @@ nav ul{
   font-size: 20px;
   margin-left: 10px;
   margin-right: 20px;
+  color: white;
 }
 
 /* MAIN */
 .synopsisMain{
   margin-left: 5%;
-  font-family: 'Gotham-Ultra';
+  font-family: 'Gotham-Medium';
   color: rgba(222, 142, 0, 0.8);
   letter-spacing: .1em;
   line-height: 1.6;
@@ -112,7 +115,7 @@ nav ul{
   flex-direction: column;
   margin-top: 10%;
   margin-right: 60%;
-  font-size: 18px;
+  font-size: 22px;
   color: rgba(255, 255, 255, 0.8);
   letter-spacing: .1em;
   line-height: 1.6;

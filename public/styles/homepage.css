@@ -1,5 +1,5 @@
 body{
-  width: 100%;
+  width: 99%;
   background-image: url("../images/hpbkg.jpg");
   background-color: #000;
   background-size: 100% auto;
@@ -29,22 +29,25 @@ body{
 	url('../fonts/DeadKansas.ttf')
 	format('truetype');
 }
+
 /* HEADER */
 header{
   top: 0;
   width: 100%;
+  height: 70px;
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  z-index:1;
+//  -webkit-filter: blur(2px); /* Safari */
+//  filter: blur(2px);
+  z-index: 1;
 }
 
 .logo img{
-  height: 35.5px;
-  width: 69.5px;
+  height: 45px;
   padding-left: 10px;
 }
 
@@ -53,7 +56,8 @@ nav ul{
   flex-direction: row;
   list-style: none;
   font-family: 'DeadKansas';
-  font-size: 20px;
+  font-weight: normal;
+  font-size: 30px;
 }
 
 .menuItem a{
@@ -61,7 +65,7 @@ nav ul{
   text-decoration: none;
   color: white;
 }
-.menuItem a:hover{
+.menuItem a:hover, .current a{
   color: #890202;
 }
 
@@ -72,9 +76,9 @@ nav ul{
 }
 
 .socialMedia img{
-  width: 24px;
-  height: 24px;
-  padding: 0 5px;
+  width: 40px;
+  height: 40px;
+  padding: 0 7px;
 }
 
 #thejoker{
@@ -82,6 +86,16 @@ nav ul{
   font-size: 20px;
   margin-left: 10px;
   margin-right: 20px;
+  color: white;
+}
+
+.trailer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
 }
 
 /* MAIN */
