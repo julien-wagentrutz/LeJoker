@@ -121,3 +121,31 @@ h1 {
 span {
   background: #F4C51E !important;
 }
+
+/* FOOTER */
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  font-family: 'GothamNarrow-Book';
+  font-size: 8px;
+  color:white;
+  z-index:1;
+}
+.footerInformation{
+  display: flex;
+  flex-direction: row;
+}
+.footerInformation a{
+  padding-left: 7px;
+  text-decoration: none;
+  color: white;
+}
+
+#jokerDC{
+  padding-right: 20px;
+}
