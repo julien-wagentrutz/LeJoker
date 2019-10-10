@@ -1,5 +1,4 @@
 body{
-  background-image: url("../images/hpbkg.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -15,6 +14,7 @@ header{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  z-index: 1;
 }
 
 .logo img{
@@ -42,4 +42,13 @@ nav ul{
 /* MAIN */
 .container{
   margin-top: 90px;
+}
+
+.trailer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
 }
