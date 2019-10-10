@@ -30,7 +30,6 @@ body{
 /* HEADER */
 header{
   top: 0;
-  height: 60px;
   width: 100%;
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
@@ -38,37 +37,21 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
-}
-
-
-.navBar{
-  font-family: DeadKansas;
-  font-size: 25px;
-}
-
-#thejoker{
-  font-family: GothamNarrow-Black;
-  font-size: 20px;
+  z-index:1;
 }
 
 .logo img{
   height: 35.5px;
   width: 69.5px;
+  padding-left: 10px;
 }
 
 nav ul{
   display: flex;
   flex-direction: row;
   list-style: none;
-}
-
-#left, #right{
-  display: flex;
-  flex-direction: row;
-
-  align-items: center;
-  list-style: none;
+  font-family: 'DeadKansas';
+  font-size: 20px;
 }
 
 .menuItem a{
@@ -76,10 +59,27 @@ nav ul{
   text-decoration: none;
   color: white;
 }
+.menuItem a:hover{
+  color: #890202;
+}
+
+.leftBlock,.rightBlock{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 .socialMedia img{
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
+  padding: 0 5px;
+}
+
+#thejoker{
+  font-family: 'GothamNarrow-Black';
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
 }
 
 /* MAIN */
@@ -94,4 +94,32 @@ nav ul{
   min-width: 100%;
   min-height: 100%;
   z-index: 0;
+}
+
+/* FOOTER */
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  font-family: 'GothamNarrow-Book';
+  font-size: 8px;
+  color:white;
+  z-index:1;
+}
+.footerInformation{
+  display: flex;
+  flex-direction: row;
+}
+.footerInformation a{
+  padding-left: 7px;
+  text-decoration: none;
+  color: white;
+}
+
+#jokerDC{
+  padding-right: 20px;
 }

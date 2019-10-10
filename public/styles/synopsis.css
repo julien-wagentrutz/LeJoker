@@ -8,8 +8,141 @@ body{
   color: white;
 }
 
+@font-face {
+  font-family: 'GothamNarrow-Black';
+  src:
+	url('../fonts/GothamNarrow-Black.otf')
+	format('opentype');
+}
+
+@font-face {
+  font-family: 'GothamNarrow-Book';
+  src:
+	url('../fonts/GothamNarrow-Book.otf')
+	format('opentype');
+}
+
+@font-face {
+  font-family: 'DeadKansas';
+  src:
+	url('../fonts/DeadKansas.ttf')
+	format('truetype');
+}
+
+@font-face {
+  font-family: 'Gotham-Thin';
+  src:
+	url('../fonts/Gotham-Thin.otf')
+	format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham-Ultra';
+  src:
+	url('../fonts/Gotham-Ultra.otf')
+	format('opentype');
+}
+
+
+/* HEADER */
+header{
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index:1;
+}
+
+.logo img{
+  height: 35.5px;
+  width: 69.5px;
+  padding-left: 10px;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-family: 'DeadKansas';
+  font-size: 20px;
+}
+
+.menuItem a{
+  margin: 0 30px;
+  text-decoration: none;
+  color: white;
+}
+.menuItem a:hover{
+  color: #890202;
+}
+
+.leftBlock,.rightBlock{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.socialMedia img{
+  width: 24px;
+  height: 24px;
+  padding: 0 5px;
+}
+
+#thejoker{
+  font-family: 'GothamNarrow-Black';
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+/* MAIN */
+.synopsisMain{
+  margin-left: 5%;
+  font-family: 'Gotham-Ultra';
+  color: rgba(222, 142, 0, 0.8);
+  letter-spacing: .1em;
+  line-height: 1.6;
+}
 .synopsis{
   display: flex;
   flex-direction: column;
+  margin-top: 10%;
   margin-right: 60%;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: .1em;
+  line-height: 1.6;
+}
+
+
+/* FOOTER */
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  font-family: 'GothamNarrow-Book';
+  font-size: 8px;
+  color:white;
+  z-index:1;
+}
+.footerInformation{
+  display: flex;
+  flex-direction: row;
+}
+.footerInformation a{
+  padding-left: 7px;
+  text-decoration: none;
+  color: white;
+}
+
+#jokerDC{
+  padding-right: 20px;
 }
