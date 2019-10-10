@@ -1,0 +1,15 @@
+body{
+  width: 100%;
+  background-image: url("../images/synbkg.png");
+  background-color: #000;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+.synopsis{
+  display: flex;
+  flex-direction: column;
+  margin-right: 60%;
+}
