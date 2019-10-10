@@ -1,0 +1,124 @@
+body{
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'GothamNarrow-Black';
+  src:
+	url('../fonts/GothamNarrow-Black.otf')
+	format('opentype');
+}
+
+@font-face {
+  font-family: 'GothamNarrow-Book';
+  src:
+	url('../fonts/GothamNarrow-Book.otf')
+	format('opentype');
+}
+
+@font-face {
+  font-family: 'DeadKansas';
+  src:
+	url('../fonts/DeadKansas.ttf')
+	format('truetype');
+}
+
+/* HEADER */
+header{
+  top: 0;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+
+.navBar{
+  font-family: DeadKansas;
+  font-size: 25px;
+}
+
+#thejoker{
+  font-family: GothamNarrow-Black;
+  font-size: 20px;
+  color: white;
+}
+
+.logo img{
+  height: 35.5px;
+  width: 69.5px;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+#left, #right{
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  list-style: none;
+}
+
+.menuItem a{
+  margin: 0 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.socialMedia img{
+  width: 40px;
+  height: 40px;
+}
+
+/* MAIN */
+.container{
+  margin-top: 90px;
+}
+
+.trailer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
+}
+
+
+.s1 {
+  background: url("../images/Todd.png");
+  background-size: cover;
+}
+
+.s2 {
+  background: url("../images/Joaquin.png");
+  background-size: cover;
+}
+.s3 {
+  background: url("../images/Robert.png");
+  background-size: cover;
+}
+.s4 {
+  background: url("../images/Zazie.png");
+  background-size: cover;
+}
+
+h1 {
+  color: #F4C51E;
+  font-family: DeadKansas;
+  font-weight: normal;
+  font-size: 105px;
+}
+
+span {
+  background: #F4C51E !important;
+}
