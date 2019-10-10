@@ -18,7 +18,9 @@
             <li><img src="public/images/joker/calque4.png" alt="" class="hidden" ></li>
             <li><img src="public/images/joker/calque5.png" alt="" class="hidden" ></li>
         </ul>
-        <a class="btn discovery hidden" href="#">Découvrir le site</a>
+        <div class="btn discovery hidden">
+            <a href="pages/homepages.html">Découvrir le site</a>
+        </div>
     </div>
 </body>
     <script>
@@ -175,7 +177,6 @@
                 if(etape < 5)
                 {
                     audioBox[etape].play()
-
                 }
 /*
 
@@ -214,6 +215,7 @@
                     step = true
                     if(etape == 4) {
                         audioBox[etape].pause()
+                        document.querySelector('.discovery').classList.add('hidden')
                     }
 
                 }, 2000)
@@ -221,6 +223,7 @@
                 if(etape == 5)
                 {
                     audioBox[etape].play()
+                    document.querySelector('.discovery').classList.remove('hidden')
                 }
             }
 

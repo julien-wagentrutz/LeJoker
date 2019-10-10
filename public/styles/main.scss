@@ -7,7 +7,24 @@ body{
     height: 100vh;
     overflow: hidden;
     position: relative;
+    .discovery{
+      position: absolute;
+      top: 5vw;
+      width: 100%;
+      z-index: 5;
+      text-align: center;
+      transition: none;
+      a{
+        font-family: GothamNarrow-Black;
+        text-decoration: none;
+        font-size: calc(12px + 1vw);
+        color: #F4C51E;
+        padding: 15px 20px;
+        background-color: #890202;
+        border-radius: 5px;
+      }
 
+    }
     #background{
       background-image: url("../images/backgroundLight.jpg");
       filter: brightness(1) drop-shadow(2px 4px 6px black);
@@ -104,3 +121,11 @@ body{
     transform: rotate(-1deg);
   }
 }
+
+@font-face {
+  font-family: 'GothamNarrow-Black';
+  src:
+          url('../fonts/GothamNarrow-Black.otf')
+          format('opentype');
+}
+
