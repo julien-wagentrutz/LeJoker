@@ -52,6 +52,19 @@ body {
           opacity: 1;
           max-height: 100vh;
           transition: all 6s; }
+  body #tuto {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 4; }
+    body #tuto p {
+      color: #F4C51E;
+      font-family: GothamNarrow-Black;
+      font-size: calc(16px + 8vw);
+      margin: 0; }
   body #loader {
     display: flex;
     justify-content: center;
@@ -63,7 +76,7 @@ body {
     top: 0;
     z-index: 5; }
   body #loader.hidden {
-    transition: all 1.5s !important; }
+    transition: all 1s !important; }
   body .hidden {
     opacity: 0 !important;
     transition: all 4s; }
