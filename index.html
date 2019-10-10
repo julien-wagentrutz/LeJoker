@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="public/styles/main.css">
 </head>
 <body>
+    <div id="loader">
+        <iframe src="public/images/giphy.gif" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
     <div id="scene">
         <div id="background">
-
         </div>
         <ul id="jokerFace" class="rotate">
             <li><img src="public/images/joker/original.png" alt="" id="firstImg" ></li>
@@ -19,11 +21,19 @@
             <li><img src="public/images/joker/calque5.png" alt="" class="hidden" ></li>
         </ul>
         <div class="btn discovery hidden">
-            <a href="pages/homepages.html">Découvrir le site</a>
+            <a href="pages/homepage.html">Découvrir le site</a>
         </div>
     </div>
 </body>
     <script>
+
+        window.addEventListener('load', (event) => {
+
+                document.querySelector('#loader').classList.add('hidden')
+        });
+
+
+
         let scroll = 0
         let scale = 1
         let etape = 0
@@ -57,18 +67,6 @@
         audioStart.loop = true;
         firstImg.style.opacity = 1
 
-
-       /* window.addEventListener('keypress',function () {
-            let randomNum = Math.floor(Math.random()*audioBox.length)
-            audioBox[randomNum].volume = 1
-            if(randomNum>1)
-            {
-                audioBox[randomNum].volume = 0.5
-            }
-            audioBox[randomNum].play()
-
-        })
-*/
 
         window.onload = function () {
             audioStart.play()
@@ -168,7 +166,7 @@
 
                 if(etape == 5)
                 {
-                    audioStart.volume = 0.2
+                    audioStart.volume = 0.3
                 }
 
 
@@ -178,36 +176,8 @@
                 {
                     audioBox[etape].play()
                 }
-/*
 
 
-
-                if((etape == 10) && 10 > Math.round(scroll/100))
-                {
-                    audioStart.play()
-                    audioEnd.pause()
-                }
-                else if((etape == 10) && 10 < Math.round(scroll/100))
-                {
-                    audioStart.pause()
-                    audioEnd.play()
-                }
-
-
-
-
-                scale = etape * percentScale + 1
-
-                pictures[etape].querySelector('img').classList.remove('hidden')
-
-                document.querySelector('#firstImg').style.transform = 'scale('+scale+')'
-                document.querySelector('#jokerBackgroundDark').style.opacity = 0.05 * etape
-                let scaleBg = scale + 0.2
-                document.querySelector('#jokerBackgroundDark').style.transform = 'scale('+ scaleBg +')'
-
-                console.log(etape)
-                step = false
-*/
                 step = false
 
 
