@@ -23,6 +23,13 @@ body{
 	format('truetype');
 }
 
+@font-face {
+  font-family: 'Gotham-Medium';
+  src:
+	url('../fonts/Gotham-Medium.otf')
+	format('opentype');
+}
+
 /* HEADER */
 header{
   top: 0;
@@ -120,7 +127,6 @@ nav ul{
   font-weight: normal;
   font-size: 90px;
   margin-left: 5%;
-  margin-top: 20%;
 }
 
 .s3 h1 {
@@ -129,7 +135,7 @@ nav ul{
   font-weight: normal;
   font-size: 90px;
   margin-left: 5%;
-  margin-top: 7%;
+  margin-top: 5%;
 }
 
 .s2 h1, .s4 h1 {
@@ -138,7 +144,6 @@ nav ul{
   font-weight: normal;
   font-size: 90px;
   margin-left: 70%;
-  margin-top: 15%;
 }
 
 .s1 h2, .s3 h2 {
@@ -147,6 +152,7 @@ nav ul{
   font-weight: normal;
   font-size: 90px;
   margin-left: 70%;
+  bottom: 10%;
 }
 
 .s2 h2, .s4 h2 {
@@ -170,9 +176,53 @@ h3 {
   font-family: DeadKansas;
   font-weight: normal;
   font-size: 40px;
-  margin-left: 75%;
+  margin-left: 65%;
+  height: 5px;
+  bottom: 20%;
 }
 
+.s1 p{
+  font-family: 'Gotham-Medium';
+  font-size: 17px;
+  color: white;
+  width: 30%;
+  margin-left: 60%;
+  margin-top: 10%;
+  letter-spacing: 2.5px;
+  text-align: justify;
+}
+
+.s2 p{
+  font-family: 'Gotham-Medium';
+  font-size: 17px;
+  color: white;
+  width: 30%;
+  margin-left: 10%;
+  margin-top: 10%;
+  letter-spacing: 2.5px;
+  text-align: justify;
+}
+
+.s3 p{
+  font-family: 'Gotham-Medium';
+  font-size: 17px;
+  color: white;
+  width: 30%;
+  margin-left: 3%;
+  letter-spacing: 2.5px;
+  text-align: justify;
+}
+
+.s4 p{
+  font-family: 'Gotham-Medium';
+  font-size: 17px;
+  color: white;
+  width: 30%;
+  margin-left: 23%;
+  margin-top: 5%;
+  letter-spacing: 2.5px;
+  text-align: justify;
+}
 
 span {
   background: #F4C51E !important;

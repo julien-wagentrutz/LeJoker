@@ -84,7 +84,7 @@ nav ul{
 }
 /* MAIN */
 .container{
-  margin-top: 90px;
+  margin-top: 10%;
 }
 
 .trailer {
@@ -92,6 +92,35 @@ nav ul{
   right: 0;
   bottom: 0;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 95%;
   z-index: 0;
+  margin-bottom: 17px;
+}
+
+/* FOOTER */
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  font-family: 'GothamNarrow-Book';
+  font-size: 8px;
+  color:white;
+  z-index:1;
+}
+.footerInformation{
+  display: flex;
+  flex-direction: row;
+}
+.footerInformation a{
+  padding-left: 7px;
+  text-decoration: none;
+  color: white;
+}
+
+#jokerDC{
+  padding-right: 20px;
 }
