@@ -3,18 +3,53 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
+  margin: 0;
 }
+
+@font-face {
+  font-family: 'GothamNarrow-Black';
+  src:
+	url('../fonts/GothamNarrow-Black.otf')
+	format('opentype');
+}
+
+@font-face {
+  font-family: 'GothamNarrow-Book';
+  src:
+	url('../fonts/GothamNarrow-Book.otf')
+	format('opentype');
+}
+
+@font-face {
+  font-family: 'DeadKansas';
+  src:
+	url('../fonts/DeadKansas.ttf')
+	format('truetype');
+}
+
 /* HEADER */
 header{
   top: 0;
+  height: 60px;
   width: 100%;
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   z-index: 1;
+}
+
+
+.navBar{
+  font-family: DeadKansas;
+  font-size: 25px;
+}
+
+#thejoker{
+  font-family: GothamNarrow-Black;
+  font-size: 20px;
 }
 
 .logo img{
@@ -28,6 +63,14 @@ nav ul{
   list-style: none;
 }
 
+#left, #right{
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  list-style: none;
+}
+
 .menuItem a{
   margin: 0 30px;
   text-decoration: none;
@@ -35,8 +78,8 @@ nav ul{
 }
 
 .socialMedia img{
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 /* MAIN */
