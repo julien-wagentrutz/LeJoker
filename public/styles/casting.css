@@ -1,5 +1,7 @@
 body{
+  background: black;
   margin: 0;
+  font-weight: normal;
 }
 
 @font-face {
@@ -63,6 +65,7 @@ nav ul{
 .menuItem a{
   margin: 0 30px;
   text-decoration: none;
+  font-weight: normal;
   color: white;
 }
 .menuItem a:hover, .current a{
@@ -106,19 +109,23 @@ nav ul{
 .s1 {
   background: url("../images/Todd.png");
   background-size: cover;
+  background-position: center;
 }
 
 .s2 {
   background: url("../images/Joaquin.png");
   background-size: cover;
+  background-position: center;
 }
 .s3 {
   background: url("../images/Robert.png");
   background-size: cover;
+  background-position: center;
 }
 .s4 {
   background: url("../images/Zazie.png");
   background-size: cover;
+  background-position: center;
 }
 
 .s1 h1 {
@@ -168,7 +175,7 @@ h3 {
   font-family: DeadKansas;
   font-weight: normal;
   font-size: 40px;
-  margin-left: 17%;
+  margin-left: 15%;
 }
 
 .s3 h3 {
@@ -224,8 +231,26 @@ h3 {
   text-align: justify;
 }
 
+#more {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  line-height: 130px;
+  font-family: 'DeadKansas';
+  font-size: 70px;
+  color: white;
+}
+
+#left {
+  color: #F4C51E;
+}
+
 span {
   background: #F4C51E !important;
+}
+#fp-nav ul li .fp-tooltip {
+  font-family: 'Gotham-Medium'!important;
 }
 
 /* FOOTER */
