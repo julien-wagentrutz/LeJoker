@@ -39,6 +39,7 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  z-index:1;
 }
 
 .logo img{
@@ -85,7 +86,7 @@ nav ul{
 
 /* MAIN */
 .container{
-  margin-top: 7%;
+  margin-top: 10%;
 }
 
 .firstLine{
