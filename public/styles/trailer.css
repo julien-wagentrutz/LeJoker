@@ -1,0 +1,45 @@
+body{
+  background-image: url("../images/hpbkg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+/* HEADER */
+header{
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo img{
+  height: 35.5px;
+  width: 69.5px;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.menuItem a{
+  margin: 0 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.socialMedia img{
+  width: 24px;
+  height: 24px;
+}
+
+/* MAIN */
+.container{
+  margin-top: 90px;
+}
